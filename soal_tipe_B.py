@@ -211,8 +211,8 @@ def soal_19_search(dll, target):
 # ======================================================================
 # SOAL 20 -- Delete First Node
 # ======================================================================
-NIM_20 = "ISI_NIM"
-NAMA_20 = "ISI_NAMA"
+NIM_20 = "108102500009"
+NAMA_20 = "NI MADE SINTIA PRASTINI"
 
 def soal_20_delete_first(dll):
     """
@@ -224,7 +224,8 @@ def soal_20_delete_first(dll):
     dll.first = dll.first.next
     dll.first.prev = None
     """
-    pass  # <-- tulis kode Anda di sini
+    dll.first = dll.first.next
+    dll.first.prev = None
 
 # ======================================================================
 # SOAL 21 -- Delete Last Node
