@@ -229,8 +229,8 @@ def soal_20_delete_first(dll):
 # ======================================================================
 # SOAL 21 -- Delete Last Node
 # ======================================================================
-NIM_21 = "ISI_NIM"
-NAMA_21 = "ISI_NAMA"
+NIM_21 = "108102500028"
+NAMA_21 = "Nicholas Musa Surya Susanto"
 
 def soal_21_delete_last(dll):
     """
