@@ -111,8 +111,8 @@ def soal_15_insert_after(dll, node_target, data):
 # ======================================================================
 # SOAL 16 -- Insert Before Target Node
 # ======================================================================
-NIM_16 = "ISI_NIM"
-NAMA_16 = "ISI_NAMA"
+NIM_16 = "108102530013"
+NAMA_16 = "M. Albani Mufti Radja T"
 
 def soal_16_insert_before(dll, node_target, data):
     """
@@ -129,6 +129,18 @@ def soal_16_insert_before(dll, node_target, data):
     Q.next = P
     """
     pass  # <-- tulis kode Anda di sini
+  
+    #def soal_16_insert_before(dll, node_target, data):
+    P = Node(data)
+    Q = node_target.prev
+    P.next = node_target
+    P.prev = Q
+    node_target.prev = P
+    if Q is not None:
+        Q.next = P
+    else:
+        dll.head = P  # target adalah head, jadi P jadi head baru
+  
 
 # ======================================================================
 # SOAL 17 -- Traverse Maju
