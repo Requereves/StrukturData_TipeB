@@ -69,8 +69,8 @@ def soal_13_insert_first(dll, data):
 # ======================================================================
 # SOAL 14 -- Insert Last Node
 # ======================================================================
-NIM_14 = "ISI_NIM"
-NAMA_14 = "ISI_NAMA"
+NIM_14 = "108102500037"
+NAMA_14 = "Faatin Jamiilatul Hasanah"
 
 def soal_14_insert_last(dll, data):
     """
