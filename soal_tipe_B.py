@@ -115,7 +115,7 @@ def soal_15_insert_after(dll, node_target, data):
     node_target.next = P
     Q.prev = P
     """
-    pass  # <-- tulis kode Anda di sini
+    
 
 # ======================================================================
 # SOAL 16 -- Insert Before Target Node
@@ -198,8 +198,8 @@ def soal_18_traverse_mundur(dll):
 # ======================================================================
 # SOAL 19 -- Search Target
 # ======================================================================
-NIM_19 = "ISI_NIM"
-NAMA_19 = "ISI_NAMA"
+NIM_19 = "108102500058"
+NAMA_19 = "Fathya Salsabila"
 
 def soal_19_search(dll, target):
     """
@@ -215,8 +215,13 @@ def soal_19_search(dll, target):
         P = P.next
     RETURN None
     """
-    pass  # <-- tulis kode Anda di sini
-
+    
+ P = dll.first
+    WHILE P is not None:
+        IF P.info == target:
+            RETURN P
+        P = P.next
+    RETURN None
 # ======================================================================
 # SOAL 20 -- Delete First Node
 # ======================================================================
