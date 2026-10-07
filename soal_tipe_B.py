@@ -84,7 +84,10 @@ def soal_14_insert_last(dll, data):
     dll.last.next = P
     dll.last = P
     """
-    pass  # <-- tulis kode Anda di sini
+    P = Node(data)
+    p.prev = dll.last
+    dll.last.next = P
+    dll.last = P
 
 # ======================================================================
 # SOAL 15 -- Insert After Target Node
