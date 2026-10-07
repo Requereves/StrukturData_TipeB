@@ -90,6 +90,21 @@ def soal_14_insert_last(dll, data):
     dll.last.next = P
     dll.last = P
     """
+  def soal_14_insert_last(dll, data):
+    """Sisipkan node baru di posisi paling belakang list."""
+    # 1. Buat node baru
+    P = Node(data)  #
+
+    # 2. Jika list masih kosong
+    if dll.first is None:
+        dll.first = P
+        dll.last = P
+        return
+
+    # 3. Jika list tidak kosong, sambungkan ke node terakhir (dll.last)
+    P.prev = dll.last  #
+    dll.last.next = P  #
+    dll.last = P  #[cite: 2]
     P = Node(data)
     p.prev = dll.last
     dll.last.next = P
@@ -98,8 +113,8 @@ def soal_14_insert_last(dll, data):
 # ======================================================================
 # SOAL 15 -- Insert After Target Node
 # ======================================================================
-NIM_15 = "ISI_NIM"
-NAMA_15 = "ISI_NAMA"
+NIM_15 = "108102500017"
+NAMA_15 = "Nathanael Omri Yesurun"
 
 def soal_15_insert_after(dll, node_target, data):
     """
