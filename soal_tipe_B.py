@@ -252,7 +252,8 @@ def soal_21_delete_last(dll):
     dll.last = dll.last.prev
     dll.last.next = None
     """
-    pass  # <-- tulis kode Anda di sini
+    dll.last = dll.last.prev
+    dll.last.next = None
 
 # ======================================================================
 # SOAL 22 -- Delete Target Node
