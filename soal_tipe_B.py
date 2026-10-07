@@ -188,6 +188,20 @@ def soal_17_traverse_maju(dll):
     """
     pass  # <-- tulis kode Anda di sini
 
+NIM_17 = "108102500050"
+NAMA_17 = "Mario Delvino Edward Siba"
+
+def soal_17_traverse_maju(dll):
+    hasil = ""
+    P = dll.first
+    while P is not None:
+        if hasil == "":
+            hasil = P.info
+        else:
+            hasil = hasil + " <-> " + P.info
+        P = P.next
+    return hasil
+
 # ======================================================================
 # SOAL 18 -- Traverse Mundur
 # ======================================================================
