@@ -130,7 +130,35 @@ def soal_15_insert_after(dll, node_target, data):
     node_target.next = P
     Q.prev = P
     """
-    
+  class Node:
+
+    def __init__(self, data):
+        self.data = data
+        self.next = None
+        self.prev = None
+
+
+def soal_15_insert_after(dll, node_target, data):
+    """Sisipkan node baru tepat SETELAH node_target."""
+    if node_target is None:
+        return
+
+    # 1. Buat node baru
+    P = Node(data)  #
+
+    # 2. Simpan pointer ke node setelah target
+    Q = node_target.next  #
+
+    # 3. Hubungkan pointer node baru (P)
+    P.prev = node_target  #
+    P.next = Q  #
+
+    # 4. Hubungkan pointer node target ke P
+    node_target.next = P  #[cite: 1]
+
+    # 5. Jika node target bukan tail (Q ada), ubah Q.prev ke P
+    if Q is not None:
+        Q.prev = P  #[cite: 1]
 
 # ======================================================================
 # SOAL 16 -- Insert Before Target Node
