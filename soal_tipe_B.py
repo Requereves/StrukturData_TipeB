@@ -169,8 +169,8 @@ def soal_16_insert_before(dll, node_target, data):
 # ======================================================================
 # SOAL 17 -- Traverse Maju
 # ======================================================================
-NIM_17 = "ISI_NIM"
-NAMA_17 = "ISI_NAMA"
+NIM_17 = "108102500050"
+NAMA_17 = "Mario Delvino Edward Siba"
 
 def soal_17_traverse_maju(dll):
     """
@@ -186,12 +186,6 @@ def soal_17_traverse_maju(dll):
         P = P.next
     RETURN hasil
     """
-    pass  # <-- tulis kode Anda di sini
-
-NIM_17 = "108102500050"
-NAMA_17 = "Mario Delvino Edward Siba"
-
-def soal_17_traverse_maju(dll):
     hasil = ""
     P = dll.first
     while P is not None:
@@ -201,7 +195,6 @@ def soal_17_traverse_maju(dll):
             hasil = hasil + " <-> " + P.info
         P = P.next
     return hasil
-
 # ======================================================================
 # SOAL 18 -- Traverse Mundur
 # ======================================================================
