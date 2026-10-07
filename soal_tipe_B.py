@@ -176,8 +176,8 @@ def soal_17_traverse_maju(dll):
 # ======================================================================
 # SOAL 18 -- Traverse Mundur
 # ======================================================================
-NIM_18 = "ISI_NIM"
-NAMA_18 = "ISI_NAMA"
+NIM_18 = "108102500053"
+NAMA_18 = "CHARMALITA AUDRAY PRISCHA SANU"
 
 def soal_18_traverse_mundur(dll):
     """
@@ -195,6 +195,19 @@ def soal_18_traverse_mundur(dll):
     """
     pass  # <-- tulis kode Anda di sini
 
+def soal_18_traverse_mundur(dll):
+    hasil = ""
+    P = dll.last
+
+    while P is not None:
+        if hasil == "":
+            hasil = P.info
+        else:
+            hasil = hasil + " <-> " + P.info
+        P = P.prev
+
+    return hasil
+  
 # ======================================================================
 # SOAL 19 -- Search Target
 # ======================================================================
