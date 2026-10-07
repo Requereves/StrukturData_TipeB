@@ -284,9 +284,10 @@ def soal_21_delete_last(dll):
     PSEUDOCODE:
     dll.last = dll.last.prev
     dll.last.next = None
-    """
+    """"
     dll.last = dll.last.prev
     dll.last.next = None
+
 
 # ======================================================================
 # SOAL 22 -- Delete Target Node
